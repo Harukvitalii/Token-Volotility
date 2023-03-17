@@ -1,0 +1,5 @@
+.env
+pybit.log
+unicorn.py.log
+tmp
+project/modules/__pycache__
