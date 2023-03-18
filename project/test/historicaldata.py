@@ -13,7 +13,7 @@ pair2 = pd.read_csv(
     )
 
 
-RANGE = 12 #%
+RANGE = 6 #%
 
 
 # def main(atomusdt_spot: pd.DataFrame, atomusdt_perp: pd.DataFrame): 
