@@ -34,13 +34,13 @@ for path in names:
 
 
 
-BASE_RANGE = 12 #%
+BASE_RANGE = 15 #%
 APR        = 200
 
 
 def reenter_pool_counter(klines_spot: pd.DataFrame, binrange): 
     range_prices, counter_plus = [], 0
-    RANGE = binrange
+    RANGE = binrange*0.425
 
     
     for i in range(len(klines_spot)-1): 
@@ -85,7 +85,7 @@ def counter_datasets(DFs, binrange):
     
     proc  = BASE_RANGE/binrange
     NEW_APR = proc*APR
-    return (binrange, counter_reENTER, NEW_APR)
+    return (binrange, counter_reENTER/len(DFs), NEW_APR)
 
 if __name__ == "__main__":
     DFs = [pd.DataFrame(dataset) for dataset in datasets]
