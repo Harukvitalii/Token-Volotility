@@ -35,7 +35,7 @@ for path in names:
 
 
 BASE_RANGE = 5 #%
-APR        = 250
+APR        = 200
 
 
 def reenter_pool_counter(klines_spot: pd.DataFrame, binrange): 

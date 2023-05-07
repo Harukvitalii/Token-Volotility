@@ -2,9 +2,9 @@
 
 
 # FOR YEAR
-months = 1
+months = 6
 time_days              = months *31
-start                  = 1000 #$
+start                  = 100 #$
 profit_return_to_pool  = 10
 profit_return          = False  
 # reenter_counter        = 193*12
@@ -72,7 +72,7 @@ def calculate(APR, renter, bins):
 
 
 
-dataset = [(1, 669.5, 1250.0), (2, 200.0, 625.0), (3, 96.5, 416.6666666666667), (4, 62.5, 312.5), (5, 38.0, 250.0)]
+dataset = [(1, 669.5, 1000.0), (2, 200.0, 500.0), (3, 96.5, 333.33333333333337), (4, 62.5, 250.0), (5, 38.0, 200.0)]
 
 for apr_renter in dataset: 
     print(f'APR = {apr_renter[2]}%  renter = {apr_renter[1]} bins = {apr_renter[0]}')

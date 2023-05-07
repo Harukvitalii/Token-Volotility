@@ -3,3 +3,4 @@ pybit.log
 unicorn.py.log
 tmp
 project/modules/__pycache__
+venv
